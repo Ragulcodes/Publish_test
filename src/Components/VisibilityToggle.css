@@ -1,0 +1,122 @@
+/* Container for visibility section */
+.visibility-container {
+  display: flex;
+  flex-direction: column;
+ }
+
+/* Title for the visibility section */
+.visibility-title {
+  color: #F5F7F8;
+  font-family: "Spline Sans Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin-bottom: 12px;
+}
+.toggle-container{
+  display: flex;
+padding: 8px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 8px;
+border: 11px;
+border-color: #F5F7F8;
+align-self: stretch;
+border-radius: 16px;
+opacity: var(--sds-size-stroke-border);
+background: var(--Color-Black-Secondary, #222);
+}
+/* Styles for each toggle option */
+.toggle-option {
+ 
+  border: 1px;
+  border-color: #F5F7F8;
+  }
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  width:520px;
+  background-color: #282828;
+  padding: 12px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-label:hover {
+  background-color: #3a3a3a;
+  
+}
+
+.toggle-label input[type="radio"] {
+  display: none;
+
+}
+
+.toggle-custom {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Custom radio button */
+.toggle-radio {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  border-radius: 50%;
+  border: 2px solid #F5F7F8;
+  position: relative;
+  
+  transition: border-color 0.3s ease;
+}
+
+.toggle-radio::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border-radius: 50%;
+ 
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease;
+}
+
+.toggle-label input[type="radio"]:checked + .toggle-custom .toggle-radio {
+  border-color: #00FFC2;
+
+}
+
+.toggle-label input[type="radio"]:checked + .toggle-custom .toggle-radio::after {
+  background-color: #00FFC2;
+}
+
+/* Text content inside each toggle */
+.toggle-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-title {
+  font-family: "Spline Sans Mono";
+  font-size: 16px;
+  font-weight: 600;
+  color: #F5F7F8;
+  line-height: 20px;
+}
+
+.toggle-subtitle {
+  font-family: "Spline Sans Mono";
+  font-size: 14px;
+  font-weight: 400;
+  color: #B0B0B0;
+  line-height: 18px;
+}

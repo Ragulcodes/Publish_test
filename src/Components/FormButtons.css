@@ -1,0 +1,47 @@
+/* Container for both buttons */
+.button-container {
+  margin-left: 49%;
+  width: 50%;
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* Base styles for buttons */
+button {
+  display: flex;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  opacity: 0.9;
+  cursor: pointer;
+  font-family: "Spline Sans Mono";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Styles for the cancel button */
+.cancel-button {
+  background-color: #313131;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #404040;
+}
+
+/* Styles for the submit button */
+.submit-button {
+  background-color: #664DFF;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: rgb(82, 59, 204);
+}

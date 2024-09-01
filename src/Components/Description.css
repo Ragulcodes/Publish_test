@@ -1,0 +1,41 @@
+.description-box {
+  margin-bottom: 20px;
+}
+
+.description-box label {
+  color: #F5F7F8; 
+  margin-bottom: 20px;
+  font-family: "Spline Sans Mono";
+  font-size: var(--h6-font-size, 16px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--h6-line-height, 20px); /* 125% */
+  letter-spacing: var(--h6-letter-spacing, 0px);
+}
+
+.description-box textarea {
+  display: flex;
+  font-family: "Spline Sans Mono";
+  padding: 14px 20px;
+  font-size: 16px;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 72px;
+  max-width: 530px; /* Make the input stretch across its container */
+  border-radius: 12px;
+  background: var(--Color-Grey-Primary, #313131);
+  color: #F5F7F8; /* Text color inside the input */
+  border: none; 
+  margin-top: 10px;
+}
+
+.description-box .textarea-error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}

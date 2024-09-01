@@ -1,0 +1,113 @@
+.tags-input-container {
+  margin-bottom: 20px;
+}
+
+.tags-label {
+  display: block;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  color: #F5F7F8;
+  font-family: "Spline Sans Mono";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.tags-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 8px;
+  position: relative;
+}
+
+.tag-item {
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px 16px;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #222;
+  color: #F5F7F8;
+  position: relative;
+  transition: padding-right 0.2s ease;
+}
+
+.tag-item:hover {
+  padding-right: 32px; 
+  background-color: #333;
+}
+
+.tag-img {
+  width: 16px;
+  height: 16px;
+}
+
+.tag-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.remove-tag-button {
+  display: none;
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  color: #F5F7F8;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.tag-item:hover .remove-tag-button {
+  display: block;
+  padding-left: 16px;
+  padding-right: 6px;
+}
+
+.remove-tag-button:hover {
+  color: #c94c4c;
+}
+
+.tags-input {
+    border: none;
+    display: inline-flex;
+    font-family: "Spline Sans Mono";
+    background: #222; 
+    width: 8px;
+    border-radius: 12px;
+    color: #F5F7F8;
+    border: 1px solid #FFFFFF26;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1; /* Update line-height for consistent text alignment */
+    padding: 8px 16px; /* Adjust padding to reduce height */
+    transition: width 0.3s ease;
+    width: 90px;
+    height: 20px; /* Keep the fixed height */
+  
+}
+
+.tags-input::placeholder {
+  color: #F5F7F8;
+}
+
+.tags-input:focus {
+  outline: none;
+  
+}
+
+.hidden-measurer {
+  visibility: hidden;
+    white-space: pre;
+  font-size: 16px;
+  font-family: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+}

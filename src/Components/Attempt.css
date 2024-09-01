@@ -1,0 +1,92 @@
+/* Styling for the label "Attempts" */
+.dropdown-label {
+  color: var(--Color-White-Primary, #F5F7F8);
+  font-family: "Spline Sans Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  margin-bottom: 8px;
+}
+
+/* Styling for the dropdown container */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.dropdown-header {
+  display: flex;
+  padding: 16px 20px;
+  height: 16px;
+  width: 235px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: var(--Color-Black-Secondary, #222);
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  transition: transform 0.3s ease; /* Smooth opening/closing animation */
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg); /* Arrow rotation when open */
+}
+
+/* Updated dropdown list styling */
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--Color-Black-Secondary, #222);
+  border-radius: 12px;
+  margin-top: 4px;
+  
+  max-height: 120px;
+  overflow-y: auto;    /* Scrollbar only appears when needed */
+  overflow-x: hidden;  /* Prevent horizontal scroll */
+  transition: max-height 0.3s ease-in-out;
+  padding-right: -1px;/* Add scrollbar when height exceeds */
+  transition: max-height 0.3s ease-in-out; /* Smooth drop animation */
+  box-sizing: content-box;
+}
+.dropdown-list::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  order-radius: 4px;
+  
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+  background-color: #4d4c4c; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Roundness of the scrollbar thumb */
+}
+
+.dropdown-list::-webkit-scrollbar-track {
+  border-radius: 12px;
+  background-color: #B5B7B8; /* Color of the scrollbar track */
+}
+
+.dropdown-list-item {
+  padding: 10px 20px; /* Adjusted padding for smaller height */
+  color: var(--Color-White-Primary, #F5F7F8);
+  cursor: pointer;
+  height: auto;
+  width: 80%; /* Ensure it takes full width */
+}
+
+.dropdown-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hide default list dots */
+ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0;
+  margin: 0;
+}

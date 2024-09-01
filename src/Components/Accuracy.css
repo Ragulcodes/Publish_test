@@ -1,0 +1,61 @@
+/* Styling for the master text "Accuracy Level" */
+.dropdown-label {
+  color: var(--Color-White-Primary, #F5F7F8);
+  font-family: "Spline Sans Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+}
+
+/* Styling for the dropdown box */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 10px;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  height: 40px;
+  width: 235px;
+  border-radius: 12px;
+  color: #7B7B7B;
+  background: var(--Color-Black-Secondary, #222);
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  transition: transform 0.3s ease;
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 235px;
+  background: var(--Color-Black-Secondary, #222);
+  border-radius: 12px;
+  margin-top: 4px;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-list-item {
+  padding: 16px 20px;
+  color: var(--Color-White-Primary, #F5F7F8);
+  cursor: pointer;
+  width: 100%; /* Ensure width of the list items matches the dropdown bar */
+}
+
+.dropdown-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
